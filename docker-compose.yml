@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  nuxt-app:
+    build: ./docker/node
+    ports:
+      - 3000:3000
+    volumes:
+      - ./nuxt-app:/var/www/nuxt-app
