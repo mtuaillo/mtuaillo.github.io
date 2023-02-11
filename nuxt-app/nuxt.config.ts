@@ -7,11 +7,16 @@ export default defineNuxtConfig({
         default: 'github-dark',
         dark: 'github-dark',
       },
+      // Available languages list on https://highlightjs.org/static/demo/
       preload: [
         'php',
+        'bash',
         'shell',
-        'js',
         'yaml',
+        'markdown',
+        'ini',
+        'json',
+        'sql'
       ],
     }
   },

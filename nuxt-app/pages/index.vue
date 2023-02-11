@@ -4,7 +4,10 @@ const query: QueryBuilderParams = { path: '/blog', sort: { createdAt: -1 } }
 
 useHead({
   title: "Blog",
-  meta: [{ name: "description", content: "" }],
+  meta: [{
+    name: "description",
+    content: ""
+  }],
 });
 </script>
 
@@ -12,7 +15,7 @@ useHead({
   <ContentList :query="query">
     <template v-slot="{ list }">
       <ul class="article-list">
-        <li v-for="article in list" :key="article._path" class="article">
+        <li v-for="article in list" class="article">
           <div class="wrapper">
             <header>
               <NuxtLink :to="article._path">

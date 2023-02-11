@@ -9,8 +9,8 @@ Pour démarrer, je vous propose une série d'articles afin de faire un tour d'ho
 
 Les articles de la série:
 - [PHPStan](/blog/phpstan)
-- [PHP CS Fixer]({/blog/phpcsfixer})
-- [SonarQube]({/blog/sonarqube})
+- [PHP CS Fixer](/blog/phpcsfixer)
+- [SonarQube](/blog/sonarqube)
 - PHP Lint
 - Doctrine 
 - Twig
