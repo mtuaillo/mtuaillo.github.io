@@ -3,6 +3,7 @@ FROM node:19.3.0-buster-slim
 RUN mkdir -p /var/www/nuxt-app
 WORKDIR /var/www/nuxt-app
 
+COPY . /var/www/nuxt-app/
 RUN yarn install
 
 EXPOSE 3000

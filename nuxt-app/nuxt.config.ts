@@ -22,5 +22,8 @@ export default defineNuxtConfig({
   },
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
-  }
+  },
+  css: [
+    { src: '@fortawesome/fontawesome-free/css/fontawesome.css', lang: 'css' }
+  ]
 })

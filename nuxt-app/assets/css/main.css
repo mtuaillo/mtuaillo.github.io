@@ -1,3 +1,11 @@
+@import "@fortawesome/fontawesome-free/css/fontawesome";
+@import "@fortawesome/fontawesome-free/css/brands";
+
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  src: url("~/assets/fonts/fa-brands-400.ttf");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -40,10 +48,6 @@ body {
 .icon.stroke {
   @apply stroke-slate-500;
 }
-
-/*.img-cont img {
-  @apply h-full w-full object-cover;
-}*/
 
 .article-tags {
   @apply flex gap-2 py-2;
