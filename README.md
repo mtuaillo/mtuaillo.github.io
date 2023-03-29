@@ -1,6 +1,6 @@
 # Tech blog
 
-## Start prok
+## Start project
 
 ```
 docker compose up
