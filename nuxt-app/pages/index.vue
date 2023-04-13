@@ -24,7 +24,9 @@ useHead({
                 <p>{{ article.description }}</p>
               </NuxtLink>
               <ul class="article-tags">
-                <li class="tag !py-0.5" v-for="(tag, n) in article.tags" :key="n">{{ tag }}</li>
+                <li class="tag !py-0.5" v-for="(tag, n) in article.tags" :key="n">
+                  <NuxtLink :to="`/tag/${tag}`">{{ tag }}</NuxtLink>
+                </li>
               </ul>
             </header>
           </div>
