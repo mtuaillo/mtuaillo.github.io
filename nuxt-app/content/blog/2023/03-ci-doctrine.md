@@ -4,9 +4,9 @@ tags: [php, symfony, ci, doctrine]
 createdAt: 2023-03-29
 ---
 
-![Doctrine](/img/doctrine.svg)
-
 Doctrine étant très utilisé dans les projets Symfony pour gérer la base de données, il peut être pratique de s'assurer côté intégration continue que tout est bien paramétré de ce côté.
+
+![Doctrine](/img/doctrine.svg)
 
 Le [bundle Symfony](https://github.com/doctrine/DoctrineBundle/) fournit justement une commande qu'on peut utiliser pour s'assurer que la configuration est valide et cohérente:
 

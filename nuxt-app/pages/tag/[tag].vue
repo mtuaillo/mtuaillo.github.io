@@ -3,7 +3,7 @@
     <h1>Articles avec le tag "{{ tag }}"</h1>
     <ul>
       <li v-for="(article, index) in articles" :key="index">
-        <nuxt-link :to="`${article._path}`">{{ article.title }}</nuxt-link>
+        <NuxtLink :to="`${article._path}`">{{ article.title }}</NuxtLink>
       </li>
     </ul>
   </div>

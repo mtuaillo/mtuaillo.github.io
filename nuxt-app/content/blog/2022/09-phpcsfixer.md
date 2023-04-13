@@ -1,10 +1,8 @@
 ---
 title: PHP Coding Standards Fixer
-
 tags: [php, symfony, ci]
 createdAt: 2022-09-16
 ---
-
 
 [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) est un outil permettant de contrôler et de corriger le code afin que celui ci suive certains standards, un ensemble de règles et de bonnes pratiques.
 

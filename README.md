@@ -1,7 +1,9 @@
 # Tech blog
 
-## Start project
+## Start project on local
 
 ```
-docker compose up
+task start
 ```
+
+Blog is then available on http://localhost:3000/

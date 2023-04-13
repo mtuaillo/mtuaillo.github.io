@@ -23,18 +23,18 @@
       <div class="flex flex-wrap text-center lg:text-left">
         <div class="w-full lg:w-6/12 px-4">
           <div class="mt-6 lg:mb-0 mb-6">
-            <button
+            <a
               href="https://twitter.com/mtuaillo"
-              class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              class="block float-left pt-2.5 pl-3 bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full mr-2"
             >
               <i class="fab fa-twitter"></i>
-            </button>
-            <button
+            </a>
+            <a
               href="https://github.com/maat8"
-              class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              class="block float-left pt-2.5 pl-3 bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full mr-2"
             >
               <i class="fab fa-github"></i>
-            </button>
+            </a>
           </div>
         </div>
         <!--

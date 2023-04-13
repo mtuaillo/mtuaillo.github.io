@@ -4,10 +4,10 @@ tags: [php, symfony, ci, security]
 createdAt: 2022-10-10
 ---
 
-![SonarQube](/img/sonarqube.svg)
-
 [SonarQube](https://www.sonarqube.org/) est un outil d'analyse de code. Contrairement aux autres solutions présentées ici, il s'agit plate-forme à part entière (et non d'une librairie PHP), qui se compose d'un client utilisé pour analyser le code source, et d'une interface web pour restituer les résultats.
 Elle peut d'ailleurs être utilisée avec de nombreux langages de programmation, comme Java, Python, ...
+
+![SonarQube](/img/sonarqube.svg)
 
 L'analyse recouvre un spectre assez large:
 - la sécurité: elle détecte les vulnérabilités et les failles de sécurité des librairies third-party utilisées dans le projet
