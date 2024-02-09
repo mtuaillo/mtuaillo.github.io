@@ -2,6 +2,7 @@
 title: PHPStan
 tags: [php, qa, phpstan, symfony, ci]
 createdAt: 2022-08-13
+updatedAt: 2023-02-09
 ---
 
 [PHPStan](https://phpstan.org/) est un outil d'analyse syntaxique. Son principe est de parser le code source du projet, afin de détecter des anomalies, qui peuvent être source de bugs. C'est une analyse en dehors de tout contexte d'exécution, contrairement par exemple à New Relic ou Sentry qui vont relever les erreurs intervenues pendant la génération d'une page ou l'exécution d'un script.
@@ -91,6 +92,14 @@ Pour cette dernière, il est nécessaire de configurer le chemin vers le contain
 parameters:
   symfony:
     containerXmlPath: var/cache/dev/srcDevDebugProjectContainer.xml
+```
+
+Pour l'extension Doctrine, il est nécessaire d'ajouter la configuration PHPDoc suivante dans tous les repositories:
+```php
+/**
+ * @extends ServiceEntityRepository<Entite>
+ */
+class EntiteRepository
 ```
   
 ### Plus loin

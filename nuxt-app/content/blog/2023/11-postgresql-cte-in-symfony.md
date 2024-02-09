@@ -2,6 +2,7 @@
 title: Comment utiliser les requêtes CTE de PostgreSQL avec Symfony & Doctrine
 tags: [postgresql, sql, doctrine, symfony]
 createdAt: 2023-11-15
+updatedAt: 2023-02-09
 ---
 
 Les requêtes [CTE](https://www.postgresql.org/docs/current/queries-with.html), ou Common Table Expressions, offrent une approche élégante pour concevoir des requêtes complexes. Introduites avec la version 8.4 de PostgreSQL, elles permettent de créer des requêtes temporaires dont les résultats peuvent être utilisés dans une requête principale.
@@ -71,7 +72,7 @@ $rsm
     ->addScalarResult('category_rank', 'category_rank')
     ->addScalarResult('category', 'category');
 
-$query = $this->entityManager->createNativeQuery('
+$query = $this->getEntityManager()->createNativeQuery('
     -- CTE listant le montant total des ventes par produit, pour une plage de date
 	WITH product_sales AS (
 	    SELECT
@@ -112,7 +113,9 @@ $query->setParameter('endRange', '2024-01-01');
 return $query->getResult();
 ```
 
-Ces exemples ont été créés avec l'éditeur PostgreSQL en ligne  [https://extendsclass.com/postgresql-online.html].
+Ces exemples ont été créés avec l'éditeur PostgreSQL en ligne [https://extendsclass.com/postgresql-online.html].
+
+Les Common Table Expressions sont également disponibles depuis [Mysql 8.0](https://dev.mysql.com/blog-archive/mysql-8-0-improved-performance-with-cte/), [MariaDB 10.2.1](https://mariadb.com/kb/en/with/) et [SQLite 3.8.3](https://www.sqlite.org/changes.html).
 
 <!--
 
