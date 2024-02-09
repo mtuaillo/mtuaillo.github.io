@@ -30,7 +30,7 @@
               <i class="fab fa-twitter"></i>
             </a>
             <a
-              href="https://github.com/maat8"
+              href="https://github.com/mtuaillo"
               class="block float-left pt-2.5 pl-3 bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full mr-2"
             >
               <i class="fab fa-github"></i>

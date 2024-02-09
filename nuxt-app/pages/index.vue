@@ -20,7 +20,12 @@ useHead({
             <header>
               <NuxtLink :to="article._path">
                 <h1 class="text-2xl font-semibold">{{ article.title }}</h1>
-                <p><Date :dateString="article.createdAt" /></p>
+                <p>
+                  Publié le <Date :dateString="article.createdAt" />
+                  <span v-if="article.updatedAt">
+                    - mis à jour le <Date :dateString="article.updatedAt" />
+                  </span>
+                </p>
                 <p>{{ article.description }}</p>
               </NuxtLink>
               <ul class="article-tags">
