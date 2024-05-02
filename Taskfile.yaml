@@ -4,3 +4,6 @@ tasks:
   start:
     cmds:
       - docker compose up -d
+  generate:
+    cmds:
+      - docker compose exec nuxt-app yarn generate
