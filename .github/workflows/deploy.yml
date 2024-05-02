@@ -23,6 +23,7 @@ jobs:
           cache-dependency-path: ./nuxt-app/yarn.lock
       - run: npm install
       - run: yarn generate
+      - run: cp -R ./share ./.output/public/share
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
