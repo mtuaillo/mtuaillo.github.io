@@ -18,19 +18,27 @@ export default defineNuxtConfig({
         'ini',
         'json',
         'sql',
+        'apache',
       ],
+    },
+    markdown: {
+      remarkPlugins: ['remark-reading-time'],
+    },
+    navigation: {
+      fields: ['publishedAt', 'updatedAt'],
     }
   },
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
   },
   css: [
-    { src: '@fortawesome/fontawesome-free/css/fontawesome.css', lang: 'css' }
+    { src: '@fortawesome/fontawesome-free/css/fontawesome.css', lang: 'css' },
+    { src: '@fortawesome/fontawesome-free/css/brands.css', lang: 'css' },
   ],
   app: {
     head: {
       meta: [
-        { name: 'google-site-verification', content: 'GI7jdi0qTKSicCxuqE2jaObNWgEf6-eS9FdEYu95AyA' }
+        { name: 'google-site-verification', content: 'GI7jdi0qTKSicCxuqE2jaObNWgEf6-eS9FdEYu95AyA' },
       ]
     }
   }

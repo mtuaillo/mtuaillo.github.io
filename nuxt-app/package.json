@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "build": "node_modules/.bin/nuxt build",
+    "dev": "node_modules/.bin/nuxt dev",
+    "generate": "node_modules/.bin/nuxt generate",
+    "preview": "node_modules/.bin/nuxt preview"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
@@ -16,5 +16,9 @@
     "nuxt": "^3.0.0",
     "postcss": "^8.4.21",
     "postcss-custom-properties": "^12.1.11"
+  },
+  "dependencies": {
+    "reading-time": "^1.5.0",
+    "remark-reading-time": "^2.0.1"
   }
 }

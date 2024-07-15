@@ -1,14 +1,6 @@
 <script setup lang="ts">
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 const query: QueryBuilderParams = { path: '/blog', sort: { createdAt: -1 } }
-
-useHead({
-  title: "Blog",
-  meta: [{
-    name: "description",
-    content: ""
-  }],
-});
 </script>
 
 <template>
@@ -20,7 +12,7 @@ useHead({
             <header>
               <NuxtLink :to="article._path">
                 <h1 class="text-2xl font-semibold">{{ article.title }}</h1>
-                <p>
+                <p class="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
                   Publié le <Date :dateString="article.createdAt" />
                   <span v-if="article.updatedAt">
                     - mis à jour le <Date :dateString="article.updatedAt" />

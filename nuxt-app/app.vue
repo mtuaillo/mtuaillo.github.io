@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <main class="profile-page">
+    <main>
       <section class="relative block h-500-px">
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
@@ -35,14 +35,12 @@
         </div>
       </section>
       <section class="relative py-16 bg-blueGray-200">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 max-w-7xl">
           <div
-            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
+            class="relative flex flex-col min-w-0 break-words bg-white mb-6 shadow-xl rounded-lg -mt-64"
           >
-            <div class="px-6">
-              <div class="py-10 border-blueGray-200">
-                <NuxtPage />
-              </div>
+            <div class="px-10 py-10 border-blueGray-200">
+              <NuxtPage />
             </div>
           </div>
         </div>
@@ -52,7 +50,16 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
+useHead({
+  title: 'mtuaillo - blog technique',
+  meta: [
+    { name: 'description', content: "Développeur senior freelance, j'aborde sur ce blog technique des sujets tels que PHP et Symfony, ainsi que toutes les technologies qui gravitent autour" },
+  ],
+})
+</script>
+
+<script lang="ts">
 import Navbar from "@/components/Navbar/Navbar.vue";
 import Footer from "@/components/Footer/Footer.vue";
 

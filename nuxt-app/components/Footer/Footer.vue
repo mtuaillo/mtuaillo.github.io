@@ -1,39 +1,26 @@
 <template>
   <footer class="relative bg-blueGray-200 pt-8 pb-6">
-    <div
-      class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
-      style="transform: translateZ(0);"
-    >
-      <svg
-        class="absolute bottom-0 overflow-hidden"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="none"
-        version="1.1"
-        viewBox="0 0 2560 100"
-        x="0"
-        y="0"
-      >
-        <polygon
-          class="text-blueGray-200 fill-current"
-          points="2560 0 2560 100 0 100"
-        ></polygon>
-      </svg>
-    </div>
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 max-w-7xl">
       <div class="flex flex-wrap text-center lg:text-left">
         <div class="w-full lg:w-6/12 px-4">
           <div class="mt-6 lg:mb-0 mb-6">
             <a
-              href="https://twitter.com/mtuaillo"
-              class="block float-left pt-2.5 pl-3 bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full mr-2"
+              href="https://www.linkedin.com/in/mathieutuaillon/"
+              class="block float-left pt-2.5 pl-3 bg-white text-blue-700 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full mr-2"
             >
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin-in"></i>
             </a>
             <a
               href="https://github.com/mtuaillo"
               class="block float-left pt-2.5 pl-3 bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full mr-2"
             >
               <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://twitter.com/mtuaillo"
+              class="block float-left pt-2.5 pl-3 bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full mr-2"
+            >
+              <i class="fab fa-twitter"></i>
             </a>
           </div>
         </div>
