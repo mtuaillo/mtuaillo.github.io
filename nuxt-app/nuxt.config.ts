@@ -26,5 +26,12 @@ export default defineNuxtConfig({
   },
   css: [
     { src: '@fortawesome/fontawesome-free/css/fontawesome.css', lang: 'css' }
-  ]
+  ],
+  app: {
+    head: {
+      meta: [
+        { name: 'google-site-verification', content: 'GI7jdi0qTKSicCxuqE2jaObNWgEf6-eS9FdEYu95AyA' }
+      ]
+    }
+  }
 })
