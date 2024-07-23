@@ -9,22 +9,16 @@
   </div>
 </template>
 
-<script>
-import { computed } from 'vue'
+<script setup lang="ts">
 
-export default {
-  async setup({ $content, params }) {
-    const route = useRoute();
-    const tag = decodeURIComponent(route.params.tag)
+let route = useRoute();
+let tag = decodeURIComponent(route.params.tag)
 
-    const articles = await queryContent('blog')
-      .where({ tags: { $contains: tag } })
-      .find();
 
-    return {
-      tag,
-      articles: computed(() => articles),
-    }
-  },
-}
+let { data } = await useAsyncData('posts', () =>  queryContent('blog')
+    .where({ tags: { $contains: tag } })
+    .find());
+
+const articles = data.value;
+
 </script>

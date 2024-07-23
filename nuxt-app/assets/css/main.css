@@ -84,7 +84,7 @@ p {
   margin: 16px 0;
 }
 
-pre > code  {
+html pre.shiki > code  {
   & > span {
     @apply px-2;
     background-color: #333;

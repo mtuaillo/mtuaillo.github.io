@@ -3,7 +3,10 @@ version: '3'
 tasks:
   start:
     cmds:
-      - docker compose up -d
+      - docker compose up
   generate:
     cmds:
       - docker compose exec nuxt-app yarn generate
+  bash:
+    cmds:
+      - docker compose exec nuxt-app /bin/bash

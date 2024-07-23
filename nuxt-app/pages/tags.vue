@@ -9,38 +9,22 @@
   </div>
 </template>
 
-<script>
-import { computed } from 'vue'
+<script setup lang="ts">
 
-export default {
-  async setup({ $content }) {
-    const tags = await this.$content('blog').fetch();
+const tags = {}
 
-    const tagList = {}
-
-    tags.forEach((post) => {
-      post.tags.forEach((tag) => {
-        if (!tagList[tag]) {
-          tagList[tag] = {
-            name: tag,
-            slug: encodeURIComponent(tag),
-            count: 1,
-          }
+let { data } = await useAsyncData('posts', () => queryContent().find())
+data.value.forEach((post) => {
+    post.tags.forEach((tag) => {
+        if (!tags[tag]) {
+            tags[tag] = {
+                name: tag,
+                slug: encodeURIComponent(tag),
+                count: 1,
+            }
         } else {
-          tagList[tag].count++
+            tags[tag].count++
         }
-      })
     })
-
-    const tagArray = []
-
-    for (const tag in tagList) {
-      tagArray.push(tagList[tag])
-    }
-
-    return {
-      tags: computed(() => tagArray),
-    }
-  },
-}
+})
 </script>

@@ -51,7 +51,7 @@ docker run --rm  -v "$PWD:/usr/src" --network=host sonarsource/sonar-scanner-cli
 
 Après l'analyse, retour sur l'interface, qui contiendra la liste des problèmes rencontrés:
 
-![Interface SonarQube](/assets/img/sonarqube1.png)
+![Interface SonarQube](/img/sonarqube1.png)
 
 
 ### Utilisation en déploiement continu
