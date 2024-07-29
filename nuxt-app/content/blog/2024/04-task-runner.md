@@ -4,9 +4,11 @@ tags: [ci, dev]
 createdAt: 2024-04-19
 ---
 
+[Make](https://fr.wikipedia.org/wiki/Make) a longtemps été le task runner privilégié pour le développement logiciel. En effet, c'est un outil éprouvé et qui a fait ses preuves. Il est ainsi fréquent d'avoir un Makefile dans les projets Symfony pour gérer l'installation initiale, les conteneurs Docker, la base de données, les assets front, les tests, etc...
+
 ## Make et PHP
 
-[Make](https://fr.wikipedia.org/wiki/Make) a longtemps été le task runner privilégié pour le développement logiciel. En effet, c'est un outil éprouvé et qui a fait ses preuves. Il est ainsi fréquent d'avoir un Makefile dans les projets Symfony pour gérer l'installation initiale, les conteneurs Docker, la base de données, les assets front, les tests, etc... Pourtant, sa principale force n'est pas très utile pour un langage ne nécessitant pas de phase de compilation, comme PHP. Ajoutez à cela une syntaxe stricte et compliquée à prendre en main, et certains [comportements](https://github.com/casey/just?tab=readme-ov-file#what-are-the-idiosyncrasies-of-make-that-just-avoids) qui ne sont pas forcément évidents pour le néophyte, la question de savoir si d'autres outils ne seraient pas mieux adaptés peut se poser.
+Pourtant, sa principale force n'est pas très utile pour un langage ne nécessitant pas de phase de compilation, comme PHP. Ajoutez à cela une syntaxe stricte et compliquée à prendre en main, et certains [comportements](https://github.com/casey/just?tab=readme-ov-file#what-are-the-idiosyncrasies-of-make-that-just-avoids) qui ne sont pas forcément évidents pour le néophyte, la question de savoir si d'autres outils ne seraient pas mieux adaptés peut se poser.
 
 ## Les alternatives
 

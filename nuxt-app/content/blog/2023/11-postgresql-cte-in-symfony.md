@@ -2,7 +2,7 @@
 title: Comment utiliser les requêtes CTE de PostgreSQL avec Symfony & Doctrine
 tags: [postgresql, sql, doctrine, symfony]
 createdAt: 2023-11-15
-updatedAt: 2023-02-09
+updatedAt: 2024-02-09
 ---
 
 Les requêtes [CTE](https://www.postgresql.org/docs/current/queries-with.html), ou Common Table Expressions, offrent une approche élégante pour concevoir des requêtes complexes. Introduites avec la version 8.4 de PostgreSQL, elles permettent de créer des requêtes temporaires dont les résultats peuvent être utilisés dans une requête principale.

@@ -1,7 +1,8 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', "@nuxt/image"],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/sitemap'],
   content: {
+    documentDriven: true,
     highlight: {
       theme: 'rose-pine-dawn',
       // Available languages list on https://shiki.matsu.io/languages
