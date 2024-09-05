@@ -33,6 +33,9 @@ export default defineNuxtConfig({
       ]
     }
   },
+  site: {
+    url: 'https://mtuaillo.github.io/',
+  },
   css: [
     { src: '@fortawesome/fontawesome-free/css/fontawesome.css', lang: 'css' },
     { src: '@fortawesome/fontawesome-free/css/brands.css', lang: 'css' },

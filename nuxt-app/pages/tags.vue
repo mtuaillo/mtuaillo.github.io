@@ -11,6 +11,9 @@
 
 <script setup lang="ts">
 
+// see https://github.com/nuxt/content/issues/2644#issuecomment-2176751585
+definePageMeta({ documentDriven: { page: false, surround: false, }, });
+
 const tags = {}
 
 let { data } = await useAsyncData('posts', () => queryContent().find())

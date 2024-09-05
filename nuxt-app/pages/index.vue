@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 const query: QueryBuilderParams = { path: '/blog', sort: { createdAt: -1 } }
+
+// see https://github.com/nuxt/content/issues/2644#issuecomment-2176751585
+definePageMeta({ documentDriven: { page: false, surround: false, }, });
 </script>
 
 <template>
@@ -22,7 +25,7 @@ const query: QueryBuilderParams = { path: '/blog', sort: { createdAt: -1 } }
               </NuxtLink>
               <ul class="article-tags">
                 <li class="tag !py-0.5" v-for="(tag, n) in article.tags" :key="n">
-                  <NuxtLink :to="`/tag/${tag}`">{{ tag }}</NuxtLink>
+                   <NuxtLink :to="`/tag/${tag}`">{{ tag }}</NuxtLink>
                 </li>
               </ul>
             </header>
