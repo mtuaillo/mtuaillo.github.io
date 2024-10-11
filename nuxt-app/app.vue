@@ -52,9 +52,9 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'mtuaillo - blog technique',
+  title: 'Mathieu Tuaillon - formateur et développeur senior PHP & Symfony - blog',
   meta: [
-    { name: 'description', content: "Développeur senior freelance, j'aborde sur ce blog technique des sujets tels que PHP et Symfony, ainsi que toutes les technologies qui gravitent autour" },
+    { name: 'description', content: "Développeur senior freelance, j'aborde sur ce blog technique des sujets tels que PHP et Symfony, ainsi que les technologies qui gravitent autour" },
   ],
 })
 </script>

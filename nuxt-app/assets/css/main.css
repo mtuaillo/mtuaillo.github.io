@@ -108,3 +108,10 @@ article {
     @apply underline;
   }
 }
+
+section.footnotes {
+  ol li {
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+}
