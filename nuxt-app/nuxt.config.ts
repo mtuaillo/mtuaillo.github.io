@@ -16,6 +16,7 @@ export default defineNuxtConfig({
         'php',
         'plsql',
         'regexp',
+        'toml',
         'twig',
         'shell',
         'sql',
