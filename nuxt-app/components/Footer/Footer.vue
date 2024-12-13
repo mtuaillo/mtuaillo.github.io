@@ -17,10 +17,10 @@
               <i class="fab fa-github"></i>
             </a>
             <a
-              href="https://twitter.com/mtuaillo"
+              href="https://bsky.app/profile/mtuaillo.bsky.social"
               class="block float-left pt-2.5 pl-3 bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full mr-2"
             >
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-bluesky"></i>
             </a>
           </div>
         </div>
