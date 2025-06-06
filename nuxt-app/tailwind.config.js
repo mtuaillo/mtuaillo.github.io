@@ -4,8 +4,11 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
     "./pages/**/*.vue",
+    "./content/**/*.md",
     "./nuxt.config.{js,ts}",
+    "./app.vue"
   ],
   plugins: [
     require('@tailwindcss/typography'),
@@ -73,18 +76,4 @@ module.exports = {
       },
     },
   },
-  variants: [
-    "responsive",
-    "group-hover",
-    "focus-within",
-    "first",
-    "last",
-    "odd",
-    "even",
-    "hover",
-    "focus",
-    "active",
-    "visited",
-    "disabled",
-  ],
 }

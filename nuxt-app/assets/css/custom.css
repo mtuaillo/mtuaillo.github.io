@@ -1,0 +1,52 @@
+/* Custom CSS for Twenty theme adjustments */
+.wrapper.style1.container.special .icon.solid.featured {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem !important
+}
+
+/* Ensure consistent icon container behavior */
+.wrapper.style1.container.special section {
+    text-align: center;
+}
+
+.wrapper.style1.container.special section header {
+    margin-bottom: 1rem;
+}
+
+/* Blog Preview Section - Bottom aligned buttons */
+.wrapper.style3.container.special .row {
+    display: flex;
+    align-items: stretch;
+}
+
+.wrapper.style3.container.special .row > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper.style3.container.special section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.wrapper.style3.container.special section footer {
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+/* Footer icons */
+#footer a.icon.circle.fa-linkedin {
+    background: #0077B5 !important;
+    color: #fff !important;
+}
+
+#footer a.icon.circle.fa-bluesky {
+    background: #87CEEB !important;
+    color: #fff !important;
+}

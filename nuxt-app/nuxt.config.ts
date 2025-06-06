@@ -1,5 +1,15 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  nitro: {
+    routeRules: {
+      '/**': {
+        headers: {
+          'X-Robots-Tag': 'index, follow',
+          'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' https:; connect-src 'self';"
+        } 
+      },
+    }
+  },
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/sitemap'],
   content: {
     documentDriven: true,
@@ -33,7 +43,6 @@ export default defineNuxtConfig({
   app: {
     head: {
       meta: [
-        { name: 'google-site-verification', content: 'GI7jdi0qTKSicCxuqE2jaObNWgEf6-eS9FdEYu95AyA' },
       ]
     }
   },
@@ -41,8 +50,9 @@ export default defineNuxtConfig({
     url: 'https://mtuaillo.github.io/',
   },
   css: [
-    { src: '@fortawesome/fontawesome-free/css/fontawesome.css', lang: 'css' },
-    { src: '@fortawesome/fontawesome-free/css/brands.css', lang: 'css' },
+    '~/assets/css/twenty/main.css',
+    '@fortawesome/fontawesome-free/css/all.min.css',
+    '~/assets/css/custom.css',
   ],
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
