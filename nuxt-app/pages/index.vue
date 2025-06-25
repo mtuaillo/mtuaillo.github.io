@@ -7,27 +7,11 @@ const query: QueryBuilderParams = { path: '/blog', sort: { createdAt: -1 }, limi
 definePageMeta({ documentDriven: { page: false, surround: false, }, });
 
 // Add Twenty theme body class
-useHead({
-  bodyAttrs: {
-    class: 'index'
-  }
-})
+useBodyClass('index')
 </script>
 
 <template>
-  <div id="page-wrapper">
-    <!-- Header -->
-    <header id="header" class="alt">
-      <h1 id="logo"><NuxtLink to="/">mtuaillo</NuxtLink></h1>
-      <nav id="nav">
-        <ul>
-          <li class="current"><NuxtLink to="/">Accueil</NuxtLink></li>
-          <li><NuxtLink to="/formations">Formations</NuxtLink></li>
-          <li><NuxtLink to="/blog">Blog</NuxtLink></li>
-          <li><NuxtLink to="/contact">Contact</NuxtLink></li>
-        </ul>
-      </nav>
-    </header>
+  <PageWrapper current-page="home" :is-homepage="true">
 
     <!-- Banner -->
     <section id="banner">
@@ -38,9 +22,9 @@ useHead({
         <header>
           <h2>MATHIEU TUAILLON</h2>
         </header>
-        <p>Formateur et développeur senior
+        <p>Formateur &amp; développeur senior
         <br />
-        PHP & Symfony
+        PHP - Symfony
         <br />
         </p>
         <!--<footer>
@@ -173,9 +157,7 @@ useHead({
       </footer>
     </section>
 
-    <!-- Footer -->
-    <Footer />
-  </div>
+  </PageWrapper>
 </template>
 
 <style scoped>

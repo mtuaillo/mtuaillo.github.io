@@ -13,27 +13,11 @@ let { data } = await useAsyncData('posts', () =>  queryContent('blog')
 const articles = data.value;
 
 // Add Twenty theme body class
-useHead({
-  bodyAttrs: {
-    class: 'no-sidebar'
-  }
-})
+useBodyClass('no-sidebar')
 </script>
 
 <template>
-  <div id="page-wrapper">
-    <!-- Header -->
-    <header id="header">
-      <h1 id="logo"><NuxtLink to="/">mtuaillo</NuxtLink></h1>
-      <nav id="nav">
-        <ul>
-          <li><NuxtLink to="/">Accueil</NuxtLink></li>
-          <li><NuxtLink to="/formations">Formations</NuxtLink></li>
-          <li class="current"><NuxtLink to="/blog">Blog</NuxtLink></li>
-          <li><NuxtLink to="/contact">Contact</NuxtLink></li>
-        </ul>
-      </nav>
-    </header>
+  <PageWrapper current-page="blog">
 
     <!-- Main -->
     <article id="main">
@@ -71,14 +55,14 @@ useHead({
       </section>
     </article>
 
-    <!-- Footer -->
-    <Footer />
-  </div>
+  </PageWrapper>
 </template>
 
 <style scoped>
+@import '~/assets/css/variables.css';
+
 .tag-highlight {
-  color: #3fb1a3;
-  font-weight: 400;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-normal);
 }
 </style>

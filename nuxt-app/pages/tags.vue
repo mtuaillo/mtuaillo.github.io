@@ -31,27 +31,11 @@ const getTagSize = (count) => {
 }
 
 // Add Twenty theme body class
-useHead({
-  bodyAttrs: {
-    class: 'no-sidebar'
-  }
-})
+useBodyClass('no-sidebar')
 </script>
 
 <template>
-  <div id="page-wrapper">
-    <!-- Header -->
-    <header id="header">
-      <h1 id="logo"><NuxtLink to="/">mtuaillo</NuxtLink></h1>
-      <nav id="nav">
-        <ul>
-          <li><NuxtLink to="/">Accueil</NuxtLink></li>
-          <li><NuxtLink to="/formations">Formations</NuxtLink></li>
-          <li class="current"><NuxtLink to="/blog">Blog</NuxtLink></li>
-          <li><NuxtLink to="/contact">Contact</NuxtLink></li>
-        </ul>
-      </nav>
-    </header>
+  <PageWrapper current-page="blog">
 
     <!-- Main -->
     <article id="main">
@@ -85,12 +69,12 @@ useHead({
       </section>
     </article>
 
-    <!-- Footer -->
-    <Footer />
-  </div>
+  </PageWrapper>
 </template>
 
 <style scoped>
+@import '~/assets/css/variables.css';
+
 .tags-cloud {
   display: flex;
   flex-wrap: wrap;
@@ -101,13 +85,13 @@ useHead({
 }
 
 .tag-item {
-  background: #3fb1a3;
-  border-radius: 0.35em;
-  color: #ffffff;
+  background: var(--color-primary);
+  border-radius: var(--border-radius-small);
+  color: var(--color-white);
   display: inline-block;
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
   letter-spacing: 0.025em;
-  padding: 0.5em 1em;
+  padding: var(--spacing-xs) var(--spacing-sm);
   text-transform: uppercase;
   text-decoration: none;
   border: none;
@@ -115,7 +99,7 @@ useHead({
 }
 
 .tag-item:hover {
-  background: #359388;
+  background: var(--color-primary-hover);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

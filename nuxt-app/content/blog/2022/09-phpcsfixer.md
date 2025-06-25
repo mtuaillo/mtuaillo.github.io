@@ -6,13 +6,13 @@ createdAt: 2022-09-16
 
 [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) est un outil permettant de contrôler et de corriger le code afin que celui ci suive certains standards, un ensemble de règles et de bonnes pratiques.
 
-![](/img/phpcsfixer-logo.png)
+![](/images/content/phpcsfixer-logo.png)
 
 ### Pourquoi suivre des standards ?
 
 En tant que développeur, on passe au moins autant de temps à lire du code qu'à en écrire. Et on sait tous à quel point c'est pénible de lire un fichier source trop dense, mal indenté ou code de manière inconsistente. Ou comme on est vite distrait lors d'une review par un saut de ligne manquant ou une parenthèse mal placée.
 
-![](/img/standards.png)
+![](/images/content/standards.png)
 
 Les standards vont définir un certain nombre de règles à suivre, comme par exemple:
 - sauter une ligne avant chaque appel à `return`

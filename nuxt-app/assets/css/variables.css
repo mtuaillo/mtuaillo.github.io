@@ -1,0 +1,38 @@
+/* CSS Variables for Theme Consistency */
+:root {
+  /* Brand Colors */
+  --color-primary: #3fb1a3;
+  --color-primary-hover: #359388;
+  --color-primary-light: rgba(63, 177, 163, 0.05);
+  --color-primary-shadow: rgba(63, 177, 163, 0.3);
+  
+  /* Text Colors */
+  --color-text-primary: #7c8081;
+  --color-text-dark: #333;
+  --color-white: #ffffff;
+  
+  /* Layout Spacing */
+  --spacing-xs: 0.5em;
+  --spacing-sm: 1em;
+  --spacing-md: 1.5em;
+  --spacing-lg: 2em;
+  --spacing-xl: 3em;
+  --spacing-xxl: 5em;
+  
+  /* Typography */
+  --font-size-meta: 0.7em;
+  --font-size-tag: 0.75em;
+  --font-size-small: 0.85em;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --line-height-normal: 1.6em;
+  --line-height-tight: 1.75em;
+  --letter-spacing-wide: 0.1em;
+  
+  /* Border Radius */
+  --border-radius-small: 0.35em;
+  
+  /* Borders */
+  --border-separator: solid 1px var(--color-text-dark);
+  --border-light: solid 1px rgba(124, 128, 129, 0.2);
+}

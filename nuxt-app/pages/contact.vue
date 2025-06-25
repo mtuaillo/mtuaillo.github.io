@@ -1,13 +1,8 @@
 <script setup lang="ts">
 // Add Twenty theme body class
-useHead({
-  bodyAttrs: {
-    class: 'contact'
-  }
-})
+useBodyClass('contact')
 
-// Email obfuscation
-const obfuscatedEmail = ref('bXR1YWlsbG9AZ21haWwuY29t') // Base64 encoded email
+const obfuscatedEmail = ref('bXR1YWlsbG9AZ21haWwuY29t')
 const emailUrl = computed(() => {
   const decoded = atob(obfuscatedEmail.value)
   return `mailto:${decoded}`
@@ -18,22 +13,12 @@ const handleEmailClick = (event: Event) => {
   const decoded = atob(obfuscatedEmail.value)
   window.location.href = `mailto:${decoded}`
 }
+
+definePageMeta({ documentDriven: { page: false, surround: false, }, });
 </script>
 
 <template>
-  <div id="page-wrapper">
-    <!-- Header -->
-    <header id="header">
-      <h1 id="logo"><NuxtLink to="/">mtuaillo</NuxtLink></h1>
-      <nav id="nav">
-        <ul>
-          <li><NuxtLink to="/">Accueil</NuxtLink></li>
-          <li><NuxtLink to="/formations">Formations</NuxtLink></li>
-          <li><NuxtLink to="/blog">Blog</NuxtLink></li>
-          <li class="current"><NuxtLink to="/contact">Contact</NuxtLink></li>
-        </ul>
-      </nav>
-    </header>
+  <PageWrapper current-page="contact">
 
     <!-- Main -->
     <article id="main">
@@ -75,24 +60,24 @@ const handleEmailClick = (event: Event) => {
       </section>
     </article>
 
-    <!-- Footer -->
-    <Footer />
-  </div>
+  </PageWrapper>
 </template>
 
 <style scoped>
+@import '~/assets/css/variables.css';
+
 .contact-header {
   text-align: center;
-  padding: 3em 0 2em 0;
+  padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
 }
 
 .contact-header h2 {
-  margin-bottom: 1em;
+  margin-bottom: var(--spacing-sm);
 }
 
 .contact-cta {
   text-align: center;
-  padding: 2em 1em;
+  padding: var(--spacing-lg) var(--spacing-sm);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -100,18 +85,18 @@ const handleEmailClick = (event: Event) => {
 }
 
 .contact-cta .icon.featured {
-  color: #3fb1a3;
-  margin-bottom: 1em;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
 }
 
 .contact-cta h3 {
-  color: #3fb1a3;
-  margin-bottom: 1em;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
 }
 
 .contact-cta p {
-  margin-bottom: 2em;
-  line-height: 1.6em;
+  margin-bottom: var(--spacing-lg);
+  line-height: var(--line-height-normal);
   flex-grow: 1;
 }
 
@@ -121,7 +106,7 @@ const handleEmailClick = (event: Event) => {
 
 @media screen and (max-width: 980px) {
   .contact-cta {
-    margin-bottom: 2em;
+    margin-bottom: var(--spacing-lg);
     height: auto;
   }
 }

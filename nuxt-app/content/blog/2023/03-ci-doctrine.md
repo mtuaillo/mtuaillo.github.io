@@ -6,7 +6,7 @@ createdAt: 2023-03-29
 
 Doctrine étant très utilisé dans les projets Symfony pour gérer la base de données, il peut être pratique de s'assurer côté intégration continue que tout est bien paramétré de ce côté.
 
-![Doctrine](/img/doctrine.svg)
+![Doctrine](/images/content/doctrine.svg)
 
 Le [bundle Symfony](https://github.com/doctrine/DoctrineBundle/) fournit justement une commande qu'on peut utiliser pour s'assurer que la configuration est valide et cohérente:
 
@@ -24,11 +24,11 @@ Là encore, cela permet à l'équipe de développement de détecter tôt (dès l
 
 La première vérification permet de s'assurer que le mapping des entités est valide: cela va permettre de détecter des erreurs de configuration. En effet, il peut arriver qu'un développeur configure mal une relation, notamment dans les bidirectionnelles, et de ne pas s'en rendre compte directement. Dans ce cas, la commande remontera une erreur:
 
-![Doctrine - erreur de mapping](/img/doctrine-3.png)
+![Doctrine - erreur de mapping](/images/content/doctrine-3.png)
 
 Dans le cas contraire, si la configuration Doctrine est correcte, la commande se termine avec succès:
 
-![Doctrine - mapping valide](/img/doctrine-2.png)
+![Doctrine - mapping valide](/images/content/doctrine-2.png)
 
 A noter qu'on peut également lancer uniquement cette vérification en spécifiant l'option `--skip-sync`:
 
@@ -42,11 +42,11 @@ La seconde vérification permet de s'assurer que le schéma de la base de donné
 
 Si le schéma ne correspond pas, par exemple s'il manque une table ou une colonne dans la base de données, la commande remonte une erreur:
 
-![Doctrine - erreur de synchronisation avec le schéma de la base de données](/img/doctrine-1.png)
+![Doctrine - erreur de synchronisation avec le schéma de la base de données](/images/content/doctrine-1.png)
 
 Dans le cas contraire, la commande se termine avec succès:
 
-![Doctrine - schéma de la base de données synchronisé](/img/doctrine-4.png)
+![Doctrine - schéma de la base de données synchronisé](/images/content/doctrine-4.png)
 
 A noter qu'on peut également lancer uniquement cette vérification en spécifiant l'option `--skip-mapping`:
 

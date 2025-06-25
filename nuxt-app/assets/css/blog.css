@@ -1,7 +1,9 @@
+@import './variables.css';
+
 /* Blog Article Blocks */
 .article-block {
-  padding: 2em 0;
-  border-bottom: solid 1px #333;
+  padding: var(--spacing-lg) 0;
+  border-bottom: var(--border-separator);
 }
 
 .article-block:last-child {
@@ -9,53 +11,53 @@
 }
 
 .article-block h3 {
-  margin-bottom: 0.5em;
-  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+  font-weight: var(--font-weight-semibold);
   font-size: 1.35em;
 }
 
 .article-block h3 a {
-  color: #3fb1a3;
+  color: var(--color-primary);
   text-decoration: none;
   border: none;
 }
 
 .article-block h3 a:hover {
-  color: #359388;
+  color: var(--color-primary-hover);
 }
 
 .article-meta {
-  font-size: 0.7em;
-  color: #7c8081;
+  font-size: var(--font-size-meta);
+  color: var(--color-text-primary);
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
   margin-bottom: 0.75em;
-  letter-spacing: 0.1em;
+  letter-spacing: var(--letter-spacing-wide);
 }
 
 .article-description {
   margin-bottom: 1.25em;
-  line-height: 1.6em;
+  line-height: var(--line-height-normal);
 }
 
 .article-tags {
   list-style: none;
-  margin: 0 0 1em 0;
+  margin: 0 0 var(--spacing-sm) 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5em;
+  gap: var(--spacing-xs);
 }
 
 .article-tags .tag {
-  background: #3fb1a3;
-  border-radius: 0.35em;
-  color: #ffffff;
+  background: var(--color-primary);
+  border-radius: var(--border-radius-small);
+  color: var(--color-white);
   display: inline-block;
-  font-size: 0.75em;
-  font-weight: 400;
+  font-size: var(--font-size-tag);
+  font-weight: var(--font-weight-normal);
   letter-spacing: 0.025em;
-  padding: 0.35em 0.75em;
+  padding: var(--border-radius-small) 0.75em;
   text-transform: uppercase;
 }
 
@@ -66,10 +68,10 @@
 }
 
 .article-tags .tag:hover {
-  background: #359388;
+  background: var(--color-primary-hover);
 }
 
 .article-tags .tag.tag-current {
-  background: #359388;
-  box-shadow: 0 0 0 2px rgba(63, 177, 163, 0.3);
+  background: var(--color-primary-hover);
+  box-shadow: 0 0 0 2px var(--color-primary-shadow);
 }

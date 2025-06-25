@@ -1,10 +1,8 @@
 <script setup lang="ts">
 // Add Twenty theme body class
-useHead({
-  bodyAttrs: {
-    class: 'no-sidebar'
-  }
-})
+useBodyClass('no-sidebar')
+
+definePageMeta({ documentDriven: { page: false, surround: false, }, });
 </script>
 
 <template>
@@ -46,52 +44,54 @@ useHead({
 </template>
 
 <style scoped>
+@import '~/assets/css/variables.css';
+
 .wip-header {
   text-align: center;
-  padding: 3em 0 2em 0;
+  padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
 }
 
 .wip-header h2 {
-  margin-bottom: 1em;
+  margin-bottom: var(--spacing-sm);
 }
 
 .wip-content {
   text-align: center;
-  padding: 3em 2em;
+  padding: var(--spacing-xl) var(--spacing-lg);
 }
 
 .wip-content .icon.featured {
-  color: #3fb1a3;
-  margin-bottom: 1.5em;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
 }
 
 .wip-content h3 {
-  color: #3fb1a3;
-  margin-bottom: 1.5em;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
 }
 
 .wip-content p {
-  margin-bottom: 2em;
-  line-height: 1.6em;
+  margin-bottom: var(--spacing-lg);
+  line-height: var(--line-height-normal);
 }
 
 .wip-list {
   list-style: none;
   padding: 0;
-  margin: 2em 0;
+  margin: var(--spacing-lg) 0;
   text-align: left;
   display: inline-block;
 }
 
 .wip-list li {
-  padding: 0.5em 0;
+  padding: var(--spacing-xs) 0;
   position: relative;
-  padding-left: 2em;
+  padding-left: var(--spacing-lg);
 }
 
 .wip-list li:before {
   content: "→";
-  color: #3fb1a3;
+  color: var(--color-primary);
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -99,7 +99,7 @@ useHead({
 
 @media screen and (max-width: 980px) {
   .wip-content {
-    padding: 2em 1em;
+    padding: var(--spacing-lg) var(--spacing-sm);
   }
   
   .wip-list {

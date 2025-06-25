@@ -7,7 +7,7 @@ updatedAt: 2024-02-09
 
 [PHPStan](https://phpstan.org/) est un outil d'analyse syntaxique. Son principe est de parser le code source du projet, afin de détecter des anomalies, qui peuvent être source de bugs. C'est une analyse en dehors de tout contexte d'exécution, contrairement par exemple à New Relic ou Sentry qui vont relever les erreurs intervenues pendant la génération d'une page ou l'exécution d'un script.
 
-![Logo PHPStan](/img/phpstan-logo.png)
+![Logo PHPStan](/images/content/phpstan-logo.png)
 
 Un ensemble de règles pré-établies permettent de détecter des cas assez divers, les plus courants étant:
 - variable non initialisée
@@ -38,7 +38,7 @@ vendor/bin/phpstan analyse src/ tests/ --level=5
 ```
 
 Qui affiche en réponse les anomalies détectées:
-![Erreurs](/img/phpstan1.png)
+![Erreurs](/images/content/phpstan1.png)
 
 
 Il est possible de configurer le niveau des règles utilisées, 0 étant le plus permissif, et 9 le plus contraignant. Par exemple, les typehints manquants sont considérés comme des erreurs à partir du niveau 6.

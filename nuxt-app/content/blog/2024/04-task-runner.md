@@ -44,7 +44,7 @@ tasks:
 ```
 
 La commande `task --list-all` permet de lister les tâches disponible:
-![Task list all](/img/task-list-all.png)
+![Task list all](/images/content/task-list-all.png)
 
 La syntaxe pour lancer les tâches est la suivante:
 ```sh
@@ -57,7 +57,7 @@ Repository Github: <https://github.com/go-task/task>
 
 Just se veut une manière pratique de lancer des commandes, à la syntaxe proche de Makefile tout en apportant son lot d'améliorations.
 
-![Task list all](/img/just.png)
+![Task list all](/images/content/just.png)
 
 Repository Github: <https://github.com/casey/just>
 

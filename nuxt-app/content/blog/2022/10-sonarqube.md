@@ -7,7 +7,7 @@ createdAt: 2022-10-10
 [SonarQube](https://www.sonarqube.org/) est un outil d'analyse de code. Contrairement aux autres solutions présentées ici, il s'agit plate-forme à part entière (et non d'une librairie PHP), qui se compose d'un client utilisé pour analyser le code source, et d'une interface web pour restituer les résultats.
 Elle peut d'ailleurs être utilisée avec de nombreux langages de programmation, comme Java, Python, ...
 
-![SonarQube](/img/sonarqube.svg)
+![SonarQube](/images/content/sonarqube.svg)
 
 L'analyse recouvre un spectre assez large:
 - la sécurité: elle détecte les vulnérabilités et les failles de sécurité des librairies third-party utilisées dans le projet
@@ -17,7 +17,7 @@ L'analyse recouvre un spectre assez large:
 
 On peut ainsi le voir comme un condensé de PHPStan, de [fabpot/local-php-security-checker](https://github.com/fabpot/local-php-security-checker), le tout servi par une interface qui permet d'attribuer des tags et une criticité aux problèmes, de les assigner à un développpeur, de les commenter ou de les ignorer.
 
-![Gestion des problèmes](/img/sonarqube2.png)
+![Gestion des problèmes](/images/content/sonarqube2.png)
 
 En outre, SonarQube propose plusieurs métriques intéressantes, comme une estimation du temps nécessaire pour réduire la dette technique, l'évolution ou la résolution des problèmes au fil des commits, des notes pour chaque catégorie. Bref, on est quasiment sur un outil de gestion de projet.
 
@@ -51,7 +51,7 @@ docker run --rm  -v "$PWD:/usr/src" --network=host sonarsource/sonar-scanner-cli
 
 Après l'analyse, retour sur l'interface, qui contiendra la liste des problèmes rencontrés:
 
-![Interface SonarQube](/img/sonarqube1.png)
+![Interface SonarQube](/images/content/sonarqube1.png)
 
 
 ### Utilisation en déploiement continu

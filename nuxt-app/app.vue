@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Mathieu Tuaillon - formateur et développeur senior PHP & Symfony',
+  title: 'Mathieu Tuaillon - formateur & développeur senior - PHP Symfony',
   meta: [
     {
       name: 'author',
@@ -18,7 +18,7 @@ useHead({
     },
     {
       name: 'description',
-      content: "Formateur et développeur senior PHP & Symfony. Expert en architecture backend et APIs. Accompagnement technique et formations personnalisées."
+      content: "Formateur & développeur senior - PHP Symfony. Expert en architecture backend et APIs. Accompagnement technique et formations personnalisées."
     },
     {
       name: 'google-site-verification',
@@ -26,14 +26,6 @@ useHead({
     },
   ],
   script: [
-    { src: '~/assets/js/twenty/jquery.min.js' },
-    { src: '~/assets/js/twenty/jquery.dropotron.min.js' },
-    { src: '~/assets/js/twenty/jquery.scrolly.min.js' },
-    { src: '~/assets/js/twenty/jquery.scrollex.min.js' },
-    { src: '~/assets/js/twenty/browser.min.js' },
-    { src: '~/assets/js/twenty/breakpoints.min.js' },
-    { src: '~/assets/js/twenty/util.js' },
-    { src: '~/assets/js/twenty/main.js' }
   ]
 })
 </script>

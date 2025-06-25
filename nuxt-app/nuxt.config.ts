@@ -10,7 +10,7 @@ export default defineNuxtConfig({
       },
     }
   },
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/sitemap'],
+  modules: ['@nuxt/content', '@nuxt/image', '@nuxtjs/sitemap'],
   content: {
     documentDriven: true,
     highlight: {
@@ -54,7 +54,4 @@ export default defineNuxtConfig({
     '@fortawesome/fontawesome-free/css/all.min.css',
     '~/assets/css/custom.css',
   ],
-  tailwindcss: {
-    cssPath: '~/assets/css/main.css',
-  },
 })

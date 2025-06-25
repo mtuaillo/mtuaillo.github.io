@@ -1,41 +1,25 @@
 <script setup lang="ts">
 // Add Twenty theme body class
-useHead({
-  bodyAttrs: {
-    class: 'no-sidebar'
-  }
-})
+useBodyClass('no-sidebar')
 </script>
 
 <template>
-  <div id="page-wrapper">
-    <!-- Header -->
-    <header id="header">
-      <h1 id="logo"><NuxtLink to="/">mtuaillo</NuxtLink></h1>
-      <nav id="nav">
-        <ul>
-          <li><NuxtLink to="/">Accueil</NuxtLink></li>
-          <li><NuxtLink to="/formations">Formations</NuxtLink></li>
-          <li class="current"><NuxtLink to="/blog">Blog</NuxtLink></li>
-          <li><NuxtLink to="/contact">Contact</NuxtLink></li>
-        </ul>
-      </nav>
-    </header>
+  <PageWrapper current-page="blog">
 
     <!-- Main -->
     <article id="main">
       <ContentDoc v-slot="{ doc }">
         <header class="container article-header">
           <h2>{{ doc.title }}</h2>
-          <p class="article-meta">
-            Publié le <Date :dateString="doc.createdAt" />
-            <span v-if="doc.updatedAt"> - mis à jour le <Date :dateString="doc.updatedAt" /></span>
-            - <ReadingTime :readingTime="doc.readingTime" />
-          </p>
+          <ArticleMeta 
+            :created-at="doc.createdAt"
+            :updated-at="doc.updatedAt"
+            :reading-time="doc.readingTime"
+            :show-tags="false"
+            class="centered-meta"
+          />
           <div v-if="doc.tags" class="article-tags-header">
-            <span v-for="(tag, n) in doc.tags" :key="n" class="tag">
-              <NuxtLink :to="`/tag/${tag}`">{{ tag }}</NuxtLink>
-            </span>
+            <Tag v-for="tag in doc.tags" :key="tag" :tag="tag" />
           </div>
         </header>
 
@@ -47,6 +31,7 @@ useHead({
                 <ContentRenderer :value="doc" />
               </div>
               
+
               <!-- Navigation -->
               <footer class="blog-navigation">
                 <ul class="buttons">
@@ -55,12 +40,15 @@ useHead({
               </footer>
             </div>
             <div class="col-4 col-12-narrower imp-narrower">
-              <!-- Sidebar content could go here -->
-              <section class="sidebar">
-                <h3>À propos</h3>
-                <p>Développeur et formateur PHP/Symfony passionné par la qualité du code et les bonnes pratiques de développement.</p>
+              <!-- CTA Block - responsive positioning -->
+              <section class="cta-block">
+                <h3>Besoin d'accompagnement ?</h3>
+                <p>
+                  Développeur senior PHP/Symfony et formateur professionnel,
+                  j'accompagne les entreprises dans la conception d'applications sur mesure et la formation de leurs équipes.
+                </p>
                 <ul class="buttons">
-                  <li><NuxtLink to="/contact" class="button small">Me contacter</NuxtLink></li>
+                  <li><NuxtLink to="/contact" class="button">Discutons de votre projet</NuxtLink></li>
                 </ul>
               </section>
             </div>
@@ -69,57 +57,31 @@ useHead({
       </ContentDoc>
     </article>
 
-    <!-- Footer -->
-    <Footer />
-  </div>
+  </PageWrapper>
 </template>
 
 <style scoped>
+@import '~/assets/css/variables.css';
+
 .article-header {
   text-align: center;
-  padding: 3em 0 5em 0;
+  padding: var(--spacing-xl) 0 var(--spacing-xxl) 0;
 }
 
 .article-header h2 {
-  margin-bottom: 1em;
+  margin-bottom: var(--spacing-sm);
 }
 
-.article-meta {
-  font-size: 0.85em;
-  color: #7c8081;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 1.5em;
+.centered-meta {
+  text-align: center;
 }
 
 .article-tags-header {
-  margin-top: 1em;
+  margin-top: var(--spacing-sm);
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5em;
+  gap: var(--spacing-xs);
   justify-content: center;
-}
-
-.article-tags-header .tag {
-  background: #3fb1a3;
-  border-radius: 0.35em;
-  color: #ffffff;
-  display: inline-block;
-  font-size: 0.75em;
-  font-weight: 400;
-  letter-spacing: 0.025em;
-  padding: 0.35em 0.75em;
-  text-transform: uppercase;
-}
-
-.article-tags-header .tag a {
-  color: inherit;
-  border: none;
-  text-decoration: none;
-}
-
-.article-tags-header .tag:hover {
-  background: #359388;
 }
 
 .blog-content {
@@ -133,54 +95,71 @@ useHead({
 .blog-content :deep(h4),
 .blog-content :deep(h5),
 .blog-content :deep(h6) {
-  color: #3fb1a3;
-  font-weight: 400;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-normal);
   text-transform: uppercase;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
 }
 
 .blog-content :deep(pre) {
   background: #f8f8f8;
-  border-left: solid 4px #3fb1a3;
+  border-left: solid 4px var(--color-primary);
   font-family: 'Courier New', monospace;
   font-size: 0.9em;
-  margin: 2em 0;
+  margin: var(--spacing-lg) 0;
   overflow-x: auto;
-  padding: 1em;
-  border-radius: 0.35em;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-small);
 }
 
 .blog-content :deep(code) {
   background: #f8f8f8;
-  border-radius: 0.35em;
+  border-radius: var(--border-radius-small);
   font-family: 'Courier New', monospace;
   font-size: 0.9em;
-  padding: 0.25em 0.5em;
+  padding: 0.25em var(--spacing-xs);
 }
 
 .blog-content :deep(blockquote) {
-  border-left: solid 0.5em #3fb1a3;
+  border-left: solid var(--spacing-xs) var(--color-primary);
   font-style: italic;
-  padding: 1em 0 1em 2em;
-  background: rgba(63, 177, 163, 0.05);
-  margin: 2em 0;
+  padding: var(--spacing-sm) 0 var(--spacing-sm) var(--spacing-lg);
+  background: var(--color-primary-light);
+  margin: var(--spacing-lg) 0;
 }
 
 .blog-navigation {
-  margin-top: 3em;
-  padding-top: 2em;
-  border-top: solid 1px rgba(124, 128, 129, 0.2);
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-lg);
+  border-top: var(--border-light);
 }
 
-.sidebar {
-  background: rgba(63, 177, 163, 0.05);
-  padding: 2em;
-  border-radius: 0.35em;
+.cta-block {
+  background: var(--color-primary-light);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-small);
 }
 
-.sidebar h3 {
-  color: #3fb1a3;
-  margin-bottom: 1em;
+.cta-block h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Responsive positioning: move CTA after content on small screens */
+@media screen and (max-width: 980px) {
+  .row.gtr-50 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .col-8.col-12-narrower {
+    order: 1;
+  }
+  
+  .col-4.col-12-narrower {
+    order: 2;
+    margin-top: var(--spacing-lg);
+  }
 }
 </style>
