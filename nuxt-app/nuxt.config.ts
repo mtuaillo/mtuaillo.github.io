@@ -47,7 +47,7 @@ export default defineNuxtConfig({
     }
   },
   site: {
-    url: 'https://mtuaillo.github.io/',
+    url: 'https://mtuaillo.dev/',
   },
   css: [
     '~/assets/css/twenty/main.css',

@@ -18,7 +18,7 @@ useHead({
     },
     {
       name: 'description',
-      content: "Formateur & développeur senior - PHP Symfony. Expert en architecture backend et APIs. Accompagnement technique et formations personnalisées."
+      content: "Formateur & développeur senior - PHP Symfony. Expert en architecture backend. Accompagnement technique et formations personnalisées."
     },
     {
       name: 'google-site-verification',
