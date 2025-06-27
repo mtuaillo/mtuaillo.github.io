@@ -61,8 +61,6 @@ useBodyClass('index')
               <li><span class="icon solid fa-server"></span></li>
               <li><span class="icon solid fa-cogs"></span></li>
               <li><span class="icon solid fa-graduation-cap"></span></li>
-              <!--<li><span class="icon solid fa-search"></span></li>
-              <li><span class="icon solid fa-rocket"></span></li>-->
             </ul>
           </div>
         </div>
