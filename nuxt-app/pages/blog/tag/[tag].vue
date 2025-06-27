@@ -49,7 +49,7 @@ useBodyClass('no-sidebar')
         <footer>
           <ul class="buttons">
             <li><NuxtLink to="/blog" class="button">← Retour au blog</NuxtLink></li>
-            <li><NuxtLink to="/tags" class="button">Voir tous les tags</NuxtLink></li>
+            <li><NuxtLink to="/blog/tags" class="button">Voir tous les tags</NuxtLink></li>
           </ul>
         </footer>
       </section>

@@ -50,7 +50,7 @@ useBodyClass('no-sidebar')
           <NuxtLink 
             v-for="tag in sortedTags" 
             :key="tag.slug"
-            :to="`/tag/${tag.slug}`"
+            :to="`/blog/tag/${tag.slug}`"
             class="tag-item"
             :class="getTagSize(tag.count)"
           >

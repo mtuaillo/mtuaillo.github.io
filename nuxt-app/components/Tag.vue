@@ -1,6 +1,6 @@
 <template>
   <span class="tag" :class="{ 'tag-current': isCurrent }">
-    <NuxtLink :to="`/tag/${tag}`">{{ tag }}</NuxtLink>
+    <NuxtLink :to="`/blog/tag/${tag}`">{{ tag }}</NuxtLink>
   </span>
 </template>
 
