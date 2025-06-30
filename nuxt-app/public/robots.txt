@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mtuaillo.github.io/sitemap.xml
+Sitemap: https://mtuaillo.dev/sitemap.xml

@@ -50,8 +50,8 @@ export default defineNuxtConfig({
     url: 'https://mtuaillo.dev/',
   },
   css: [
-    '~/assets/css/twenty/main.css',
     '@fortawesome/fontawesome-free/css/all.min.css',
+    '~/assets/css/twenty/main.css',
     '~/assets/css/custom.css',
   ],
 })

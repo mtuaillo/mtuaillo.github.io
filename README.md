@@ -1,3 +1,4 @@
-Symfony developer
+Formateur & développeur senior
+PHP - Symfony 
 
-[https://mtuaillo.github.io/]
+[https://mtuaillo.dev/]
