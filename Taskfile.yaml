@@ -7,6 +7,9 @@ tasks:
   generate:
     cmds:
       - docker compose exec nuxt-app yarn generate
+  preview:
+    cmds:
+      - docker compose exec --env PORT=32897 nuxt-app yarn preview
   bash:
     cmds:
       - docker compose exec nuxt-app /bin/bash

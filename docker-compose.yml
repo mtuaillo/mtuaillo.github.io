@@ -5,5 +5,6 @@ services:
       - 3000:3000
       - 4000:4000
       - 24678:24678
+      - 32897:32897
     volumes:
       - ./nuxt-app:/var/www/nuxt-app
