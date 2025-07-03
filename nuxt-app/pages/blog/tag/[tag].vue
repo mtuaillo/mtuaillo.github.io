@@ -5,12 +5,10 @@ definePageMeta({ documentDriven: { page: false, surround: false, }, });
 let route = useRoute();
 let tag = decodeURIComponent(route.params.tag)
 
-let { data } = await useAsyncData('posts', () =>  queryContent('blog')
+const articles = await queryContent('blog')
     .where({ tags: { $contains: tag } })
     .sort({ createdAt: -1 })
-    .find());
-
-const articles = data.value;
+    .find();
 
 // Add Twenty theme body class
 useBodyClass('no-sidebar')
