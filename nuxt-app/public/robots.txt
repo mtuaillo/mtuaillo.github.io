@@ -2,3 +2,8 @@ User-agent: *
 Allow: /
 
 Sitemap: https://mtuaillo.dev/sitemap.xml
+
+Disallow: /var/run/docker.sock
+Disallow: /_nuxt
+Disallow: /cache
+Disallow: /api/content
