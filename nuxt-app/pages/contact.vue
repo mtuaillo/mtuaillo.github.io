@@ -32,7 +32,7 @@ definePageMeta({ documentDriven: { page: false, surround: false, }, });
         <div class="row">
           <div class="col-6 col-12-narrower">
             <section class="contact-cta">
-              <span class="icon solid featured fa-envelope"></span>
+              <span class="icon solid featured fab fa-envelope"></span>
               <p>
                 Envoyez-moi un email directement pour discuter de vos besoins en développement ou formation.
               </p>
@@ -45,7 +45,7 @@ definePageMeta({ documentDriven: { page: false, surround: false, }, });
           </div>
           <div class="col-6 col-12-narrower">
             <section class="contact-cta">
-              <span class="icon brands solid featured fa-linkedin"></span>
+              <span class="icon brands solid featured fab fa-linkedin"></span>
               <p>
                 Connectons-nous sur LinkedIn pour échanger sur vos projets et opportunités de collaboration.
               </p>
