@@ -25,7 +25,8 @@ useBodyClass('index')
         <p>Formateur &amp; développeur senior
         <br />
         PHP - Symfony
-        <br />
+        <br /><br />
+        <i class="fa-solid fa-location-dot"></i> Besançon, Dijon, Belfort
         </p>
         <!--<footer>
           <ul class="buttons stacked">
@@ -57,10 +58,10 @@ useBodyClass('index')
           </div>
           <div class="col-4 col-12-narrower imp-narrower">
             <ul class="featured-icons">
-              <li><span class="icon solid fa-code"></span></li>
-              <li><span class="icon solid fa-server"></span></li>
-              <li><span class="icon solid fa-cogs"></span></li>
-              <li><span class="icon solid fa-graduation-cap"></span></li>
+              <li><span class="icon solid fa-code fa-solid"></span></li>
+              <li><span class="icon solid fa-server fa-solid"></span></li>
+              <li><span class="icon solid fa-cogs fa-solid"></span></li>
+              <li><span class="icon solid fa-graduation-cap fa-solid"></span></li>
             </ul>
           </div>
         </div>
@@ -71,7 +72,7 @@ useBodyClass('index')
         <div class="row">
           <div class="col-4 col-12-narrower">
             <section>
-              <span class="icon solid featured fa-laptop-code"></span>
+              <span class="icon solid featured fa-laptop-code fa-solid"></span>
               <header>
                 <h3>Développement</h3>
               </header>
@@ -83,7 +84,7 @@ useBodyClass('index')
           </div>
           <div class="col-4 col-12-narrower">
             <section>
-              <span class="icon solid featured fa-chalkboard-teacher"></span>
+              <span class="icon solid featured fa-chalkboard-teacher fa-solid"></span>
               <header>
                 <h3>Formation</h3>
               </header>
@@ -96,7 +97,7 @@ useBodyClass('index')
           </div>
           <div class="col-4 col-12-narrower">
             <section>
-              <span class="icon solid featured fa-tools"></span>
+              <span class="icon solid featured fa-tools fa-solid"></span>
               <header>
                 <h3>Conseil & Audit</h3>
               </header>
