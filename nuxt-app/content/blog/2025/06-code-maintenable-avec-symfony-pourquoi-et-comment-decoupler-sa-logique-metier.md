@@ -4,8 +4,6 @@ tags: [architecture, symfony, php, solid]
 createdAt: 2025-06-27
 ---
 
-## Pourquoi découpler la logique métier du framework ?
-
 Dans le code des applications, il est fréquent de voir des contrôleurs qui accumulent de nombreuses responsabilités.
 Cette approche, bien que rapide à implémenter, pose plusieurs problèmes de maintenabilité et de testabilité.
 Explorons pourquoi et comment mieux organiser notre code.
