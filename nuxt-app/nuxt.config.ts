@@ -48,6 +48,7 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://mtuaillo.dev/',
+    trailingSlash: true
   },
   css: [
     '@fortawesome/fontawesome-free/css/all.min.css',
