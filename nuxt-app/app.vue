@@ -5,6 +5,12 @@
 </template>
 
 <script setup lang="ts">
+let { url } = useSiteConfig()
+const route = useRoute()
+
+// Remove trailing slash
+url = url.substring(0, url.length - 1);
+
 useHead({
   title: 'Mathieu Tuaillon - formateur & développeur senior - PHP Symfony',
   meta: [
@@ -22,6 +28,12 @@ useHead({
     },
   ],
   script: [
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: `${url}${route.path}`
+    }
   ]
 })
 </script>
