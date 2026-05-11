@@ -14,7 +14,7 @@
         <p class="article-description">{{ article.description }}</p>
         <footer>
           <ul class="buttons">
-            <li><NuxtLink :to="article._path" class="button">Lire l'article</NuxtLink></li>
+            <li><NuxtLink :to="article._path + '/'" class="button">Lire l'article</NuxtLink></li>
           </ul>
         </footer>
       </section>

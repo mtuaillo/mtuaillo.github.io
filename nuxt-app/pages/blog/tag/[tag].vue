@@ -34,9 +34,6 @@ useBodyClass('no-sidebar')
           <div class="col-12">
             <section>
               <p>Aucun article trouvé avec ce tag.</p>
-              <ul class="buttons">
-                <li><NuxtLink to="/blog" class="button">← Retour au blog</NuxtLink></li>
-              </ul>
             </section>
           </div>
         </div>

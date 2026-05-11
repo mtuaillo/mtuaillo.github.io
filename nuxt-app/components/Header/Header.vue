@@ -18,13 +18,13 @@
                         <NuxtLink to="/" @click="closeMobileMenu">Accueil</NuxtLink>
                     </li>
                     <li :class="{ current: currentPage === 'formations' }">
-                        <NuxtLink to="/formations" @click="closeMobileMenu">Formations</NuxtLink>
+                        <NuxtLink to="/formations/" @click="closeMobileMenu">Formations</NuxtLink>
                     </li>
                     <li :class="{ current: currentPage === 'blog' }">
-                        <NuxtLink to="/blog" @click="closeMobileMenu">Blog</NuxtLink>
+                        <NuxtLink to="/blog/" @click="closeMobileMenu">Blog technique</NuxtLink>
                     </li>
                     <li :class="{ current: currentPage === 'contact' }">
-                        <NuxtLink to="/contact" @click="closeMobileMenu">Contact</NuxtLink>
+                        <NuxtLink to="/contact/" @click="closeMobileMenu">Contact</NuxtLink>
                     </li>
                 </ul>
             </nav>

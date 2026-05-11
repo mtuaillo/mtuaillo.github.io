@@ -6,7 +6,18 @@ const query: QueryBuilderParams = { path: '/blog', sort: { createdAt: -1 } }
 definePageMeta({ documentDriven: { page: false, surround: false, }, });
 
 // Add Twenty theme body class
-useBodyClass('no-sidebar')
+useBodyClass('no-sidebar');
+
+useHead({
+  title: 'Blog technique - mtuaillo.dev',
+  meta: [
+    {
+      name: 'description',
+      content: "Articles techniques sur PHP, Symfony, Doctrine, CI et architecture backend. Retours d'expérience et guides pratiques par un développeur senior expert."
+    },
+  ]
+})
+
 </script>
 
 <template>

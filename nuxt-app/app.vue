@@ -12,7 +12,7 @@ const route = useRoute()
 url = url.substring(0, url.length - 1);
 
 useHead({
-  title: 'Mathieu Tuaillon - formateur & développeur senior - PHP Symfony',
+  title: 'Mathieu Tuaillon - formateur & développeur senior PHP Symfony - mtuaillo.dev',
   meta: [
     {
       name: 'author',
@@ -32,7 +32,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: `${url}${route.path}`
+      href: `${url}${route.path.replace(/\/?$/, '/')}`
     }
   ]
 })

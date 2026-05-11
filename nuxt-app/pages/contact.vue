@@ -15,6 +15,10 @@ const handleEmailClick = (event: Event) => {
 }
 
 definePageMeta({ documentDriven: { page: false, surround: false, }, });
+
+useHead({
+  title: 'Contact - mtuaillo.dev',
+})
 </script>
 
 <template>
@@ -87,6 +91,7 @@ definePageMeta({ documentDriven: { page: false, surround: false, }, });
 .contact-cta .icon.featured {
   color: var(--color-primary);
   margin-bottom: var(--spacing-sm);
+  opacity: 0.5;
 }
 
 .contact-cta h3 {

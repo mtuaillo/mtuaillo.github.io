@@ -3,6 +3,16 @@
 useBodyClass('no-sidebar')
 
 definePageMeta({ documentDriven: { page: false, surround: false, }, });
+
+useHead({
+  title: 'Formations - mtuaillo.dev',
+  meta: [
+    {
+      name: 'description',
+      content: "Formations PHP et Symfony sur mesure, en présentiel ou à distance, par un développeur senior expert certifié PHP et Symfony."
+    },
+  ]
+})
 </script>
 
 <template>
@@ -36,13 +46,25 @@ definePageMeta({ documentDriven: { page: false, surround: false, }, });
                                 <li>Base de données avec Doctrine</li>
                                 <li>Console</li>
                                 <li>Formulaires & validation</li>
-                                <li>Sécurité: uthentification & autorisation</li>
+                                <li>Sécurité: authentification & autorisation</li>
                                 <li>Injection de dépendances & conteneur de services</li>
                                 <li>Frontend</li>
                                 <li>Tests automatisés</li>
                                 <li>API</li>
                                 <li>Déploiement en production</li>
                             </ul>
+
+                            <h4>Versions</h4>
+                            <ul class="wip-list">
+                                <li>PHP 8.4</li>
+                                <li>Symfony 7.3</li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div class="col-4 col-12-narrower">
+                        <section class="wip-content">
+                            Techniques avancées de développement PHP pour le Web
                         </section>
                     </div>
 
@@ -112,6 +134,7 @@ definePageMeta({ documentDriven: { page: false, surround: false, }, });
     margin: var(--spacing-md) 0;
     text-align: left;
     display: inline-block;
+    width: 100%;
 }
 
 .wip-list li {

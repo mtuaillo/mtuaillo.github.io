@@ -17,7 +17,7 @@ useBodyClass('index')
     <section id="banner">
       <div class="inner">
         <div class="author-image">
-          <img src="/images/personal/me-circle.webp" alt="Mathieu Tuaillon" />
+          <img src="/images/personal/me-circle.webp" alt="Mathieu Tuaillon" fetchpriority="high" />
         </div>
         <header>
           <h2>MATHIEU TUAILLON</h2>
@@ -124,7 +124,7 @@ useBodyClass('index')
                   <p>{{ article.description }}</p>
                   <footer>
                     <ul class="buttons">
-                      <li><NuxtLink :to="article._path" class="button">Lire l'article</NuxtLink></li>
+                      <li><NuxtLink :to="article._path + '/'" class="button">Lire l'article</NuxtLink></li>
                     </ul>
                   </footer>
                 </section>
@@ -151,7 +151,7 @@ useBodyClass('index')
       </header>
       <footer>
         <ul class="buttons">
-          <li><NuxtLink to="/contact" class="button primary">Contactez-moi</NuxtLink></li>
+          <li><NuxtLink to="/contact/" class="button primary">Contactez-moi</NuxtLink></li>
         </ul>
       </footer>
     </section>
