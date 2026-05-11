@@ -17,7 +17,7 @@ useBodyClass('index')
     <section id="banner">
       <div class="inner">
         <div class="author-image">
-          <img src="/images/personal/me-circle.png" alt="Mathieu Tuaillon" />
+          <img src="/images/personal/me-circle.webp" alt="Mathieu Tuaillon" />
         </div>
         <header>
           <h2>MATHIEU TUAILLON</h2>
