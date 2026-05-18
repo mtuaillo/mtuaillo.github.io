@@ -3,7 +3,7 @@
     <div v-for="article in articles" :key="article._path" class="col-12">
       <section class="article-block">
         <header>
-          <h3><NuxtLink :to="article._path">{{ article.title }}</NuxtLink></h3>
+          <h3><NuxtLink :to="article._path + '/'">{{ article.title }}</NuxtLink></h3>
           <ArticleMeta 
             :created-at="article.createdAt"
             :updated-at="article.updatedAt"

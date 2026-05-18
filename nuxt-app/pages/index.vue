@@ -132,16 +132,33 @@ useBodyClass('index')
             </div>
           </template>
         </ContentList>
-
-        <!--
-        <footer class="major">
-          <ul class="buttons">
-            <li><NuxtLink to="/blog" class="button">Voir tous les articles</NuxtLink></li>
-          </ul>
-        </footer>
-        -->
       </section>
     </article>
+
+    <section id="clients" class="wrapper style2 container special-alt">
+        <header>
+          <h2><strong>Clients</strong></h2>
+        </header>
+        <h3>Conseil & Développement</h3>
+        <div class="row">
+          <div class="col-4 col-12-narrower">
+            <span><a href="https://www.atolcd.com/">Atol CD</a> (Besançon)</span><br />
+          </div>
+          <div class="col-4 col-12-narrower">
+            <span><a href="https://www.economie.gouv.fr/dgfip">DGFiP</a> (Besançon)</span><br />
+          </div>
+          <div class="col-4 col-12-narrower">
+            <span><a href="https://www.fimainfo.fr/">Fimainfo</a> (Dijon)</span><br />
+          </div>
+        </div>
+        
+        <h3>Formation</h3>
+        <div class="row">
+          <div class="col-4 col-12-narrower">
+            <span><a href="https://ai.zonova.io/formations">Aquantic</a> (Belfort)</span><br />
+          </div>
+        </div>
+    </section>
 
     <!-- CTA -->
     <section id="cta">

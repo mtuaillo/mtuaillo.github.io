@@ -50,3 +50,22 @@
     background: #87CEEB !important;
     color: #fff !important;
 }
+
+/* Clients */
+section#clients h2 {
+    margin-bottom: 12.5px;
+}
+
+section#clients h3 {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+section#clients > div:first-of-type {
+    margin-bottom: 12.5px;
+}
+
+
+section#clients a {
+    color: var(--color-white);
+}
