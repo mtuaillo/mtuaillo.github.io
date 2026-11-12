@@ -25,7 +25,8 @@ useBodyClass('index')
         <p>Formateur &amp; développeur senior
         <br />
         PHP - Symfony
-        <br /><br />
+        </p>
+        <p>
         <i class="fa-solid fa-location-dot"></i> Besançon, Dijon, Belfort
         </p>
         <!--<footer>
